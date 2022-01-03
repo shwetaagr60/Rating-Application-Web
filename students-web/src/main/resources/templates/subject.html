@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Subject Data </title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		
+	</head>
+	<body style="background-color:deeppink">
+			<h2>Subject Detail</h2>
+<table class="table">
+    <thead>
+      <tr>
+        <th>Subject Name</th>
+        <th>Student Name</th>
+        <th>Test Score</th>
+        <th>Quiz Score</th>
+        <th>Project Score</th>
+        <th>Lab Score</th>
+        <th>Overall Score</th>
+      </tr>
+    </thead>
+    <tbody>
+    	<tr th:each="i: ${data}">
+	        <td th:each="item: ${i}">
+	            <span th:text="${item}"></span >
+	        </td>
+    	<tr>
+    </tbody>
+  </table>
+	</body>
+</html>
